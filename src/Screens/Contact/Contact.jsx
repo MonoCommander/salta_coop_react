@@ -6,8 +6,13 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        const serviceName = import.meta.env.EMAILJS_SERVICE_NAME;
+        const templateId = import.meta.env.EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
 
-        emailjs.sendForm('default_service', 'template_gtd2efo', form.current, 'bJwmUYUcpZFK4j4MF')
+        console.log('env: ', import.meta.env);
+
+        emailjs.sendForm(serviceName, templateId, form.current, publicKey)
             .then((result) => {
                 console.log(result.text);
                 document.getElementById("submitSuccessMessage").classList.remove("d-none");

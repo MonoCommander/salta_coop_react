@@ -26,7 +26,7 @@ return(
                                             <h2 class="fw-bolder">Internet</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
                                         </div>
-                                        <img class="img-fluid" src="./public/routerimg.jpg" width="300px" alt="..." />
+                                        <img class="img-fluid" src="/routerimg.jpg" width="300px" alt="..." />
                                     </div>
                                 </div>
                             </div>
