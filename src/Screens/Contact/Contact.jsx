@@ -19,7 +19,7 @@ const Contact = () => {
                 document.getElementById("submitErrorMessage").classList.add("d-none");
                 form.current.reset();
             }, (error) => {
-                console.log(error.text);
+                console.log(error);
                 document.getElementById("submitErrorMessage").classList.remove("d-none");
                 document.getElementById("submitSuccessMessage").classList.add("d-none");
             });
