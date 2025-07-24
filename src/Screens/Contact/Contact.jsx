@@ -6,14 +6,14 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        const serviceName = import.meta.env.EMAILJS_SERVICE_NAME;
-        const templateId = import.meta.env.EMAILJS_TEMPLATE_ID;
-        const publicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
-
         console.log('env: ', import.meta.env);
-
-        emailjs.sendForm(serviceName, templateId, form.current, publicKey)
-            .then((result) => {
+        
+        emailjs.sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_NAME,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                form.current,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            ).then((result) => {
                 console.log(result.text);
                 document.getElementById("submitSuccessMessage").classList.remove("d-none");
                 document.getElementById("submitErrorMessage").classList.add("d-none");
