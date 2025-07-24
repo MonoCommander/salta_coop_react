@@ -6,7 +6,6 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log('env: ', import.meta.env);
         
         emailjs.sendForm(
                 import.meta.env.VITE_EMAILJS_SERVICE_NAME,
