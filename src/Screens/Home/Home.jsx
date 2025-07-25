@@ -1,10 +1,10 @@
-import React from "react";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Home = () =>{
     return(
         <main className= "flex-shrink-0">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div className="container px-5">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
                     <img src="/COSEBYL.jpg" alt="coop logo" width="50px"/>
                     <a className="navbar-brand" ><span className="fw-bolder text-primary"> Cooperativa Cosebyl</span></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
