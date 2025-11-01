@@ -1,4 +1,4 @@
-import React from "react";
+import Footer from '../../components/Footer';
 
 const Services = () =>{
 return(
@@ -34,17 +34,7 @@ return(
                     </div>
                 </div>
             </section>
-            <footer className="bg-white py-4 mt-auto">
-                <div className="container px-5">
-                    <div className="row align-items-center justify-content-between flex-column flex-sm-row">
-                        <div className="col-auto"><div className="small m-0">Copyright &copy; Lambda Software Desing and Development</div>
-                        </div>
-                        <div className="col-auto">
-                            <a className="small" href="https://github.com/Lambda-Software-Desing-Dev?tab=repositories">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
     </main>
 )
 }
